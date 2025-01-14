@@ -1,0 +1,120 @@
+.outer-container {
+    border: 1px dashed black;
+    width: 75vw;
+    height: 85vh;
+    margin: 40px auto;
+}
+
+.inner-container {
+    border: 1px solid black;
+    width: 40vw;
+    height: 50vh;
+    margin: 200px auto;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    padding: 1rem;
+    color: white; 
+}
+
+.absolute {
+    background-color: #00f;
+    position: absolute;
+    top: 50px;
+    left: 500px;
+    z-index: 4;
+}
+
+.relative {
+    background-color: #f00;
+    position: relative;
+    top: 0%;
+    left: 100px;
+}
+
+.fixed {
+    background-color: green;
+    position: fixed;
+    top: 100px;
+}
+
+.sticky {
+background-color: orange;
+position: sticky;
+top: 0px;
+left: 0;
+z-index: 3;
+}
+
+/*/////////////////////////////////////*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+}
+
+section {
+    height: 100vh;
+}
+
+h1 {
+    padding: 24px;
+}
+
+h2 {
+    padding: 80px;
+    text-align: center;
+}
+
+.blue {
+    background-color: #00f;
+}
+.red {
+    background-color: #f00;
+}
+.green {
+    background-color: rgb(18, 136, 18);
+}
+
+header, footer {
+    color: white;
+    text-align: center;
+    height: 60px;
+    width: 100%;
+    margin: auto;
+    padding: 16px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    font-size: 2rem;
+
+}
+
+footer {
+    background-color: darkblue;
+    color: white;
+    position: fixed;
+    bottom: 0;
+}
+
+.social {
+    background-color: rgb(3, 255, 70);
+    color: white;
+    font-size: inherit;
+    padding: 1rem 2rem 1rem 1rem;
+    position: fixed;
+    left: 0;
+    top: 35vh;
+    z-index: 1;
+}
+
+#footer-link {
+    color: white;
+}

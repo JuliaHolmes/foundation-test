@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="/CSS/float.css" />
+  </head>
+  <body>
+    <div class="back-button"><a href="../index.html">Back</a></div>
+    <main>
+      <h1>Floats</h1>
+      <section>
+        <div class="block left">Float Left</div>
+        <p>
+          It's best to apply margin around the block element and not the text in
+          these instances. Be careful of using 'clear' to to end floating
+          sections, it will not contain previous float divs. <br />
+          The proper way to get around this is to use
+          <strong> display: flow-root;</strong> in a section so that the
+          container goes around all of the content it contains and additional
+          sections are bumped down from a floating object.
+        </p>
+      </section>
+
+      <p>
+        In the past floats were used to create columns on a page. Now with
+        modern CSS we have other methods available, including
+        <strong>Display Flex</strong> and <strong>Display Grid</strong>
+      </p>
+      <p>
+        Floats are helpful for floating items within a container, just make sure
+        you use flow-root to have a container encompass all overflowing content.
+      </p>
+      <div class="block right">Float Right</div>
+      <p>
+        Ducimus expedita repellat dolorem ipsam tenetur eos, aperiam ad,
+        pariatur repellendus placeat doloribus! Blanditiis tenetur saepe
+        cupiditate quisquam! Error, ex.
+      </p>
+      <p>
+        Nulla magnam aliquid alias unde hic, harum quibusdam iste eaque adipisci
+        iure fuga necessitatibus nostrum qui, voluptate quis non minus?
+      </p>
+    </main>
+  </body>
+</html>

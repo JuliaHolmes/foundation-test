@@ -1,0 +1,45 @@
+main {
+    margin: 24px;
+}
+
+p {
+    padding-bottom: 12px;
+}
+.columns {
+ /*   column-count: 4;
+    column-width: 250px; */
+    columns: 3 300px;
+    column-rule: 1px solid #9b9b9b;
+    column-gap: 3rem;
+}
+
+.columns h3 {
+    background-color: blue;
+    color: white;
+    padding: 1rem;
+    break-inside: avoid;
+    break-before: column;
+}
+
+.quote {
+    font-size: 3rem;
+    text-align: center;
+    color: blue;
+    column-span: all;
+    margin: 60px;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.nobreak {
+    break-inside: avoid;
+    /* column-span: all; */
+}
+
+img {
+    column-span: all;
+    width: 100vw;
+    padding-bottom: 20px;
+}

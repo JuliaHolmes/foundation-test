@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-auto-rows: 74px 50px auto 75px;
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd hd hd"
+    "bb bb bb bb bb bb bb bb bb"
+    "sb sb mn mn mn mn mn mn mn"
+    "ft ft ft ft ft ft ft ft ft";
+}
+
+.back-button {
+    grid-area: bb;
+    padding: 20px;
+    align-content: center;
+    background-color: rgba(0, 0, 255, 0.08);
+
+}
+
+.el {
+    background-color: rebeccapurple;
+    color: white;
+    display: grid;
+    place-content: center;
+}
+
+
+.header {
+    grid-area: hd;
+}
+
+.sidebar {
+    grid-area: sb;
+    background-color: rgb(112, 98, 10);
+    color: white;
+    padding:  1rem 0rem 1rem 1rem;
+    display: grid;
+    align-content: start;
+    gap: 1px;
+}
+
+.nav {
+background-color: rgba(255, 255, 255, 0.052);
+padding: 1rem;
+}
+
+.nav:hover {
+    background-color: rgb(92, 74, 4);
+}
+
+.sidebar a {
+   color: white; 
+   text-decoration: none;
+
+}
+
+.sidebar a:hover {
+    color: rgb(237, 178, 82);
+    font-style: bold;
+}
+
+.footer {
+    grid-area: ft;
+}
+
+.box {
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+    padding: 1.5rem;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+
+}
+
+
+/* Code Camp Code*/
+
+.container-grid {
+    grid-area: mn;
+    display: grid;
+    min-height: 500px;
+    margin: 16px 100px 16px 16px;
+    grid-template-columns: repeat(2, 1fr 2fr);
+    grid-auto-rows: minmax(150px, auto);
+    gap: 24px 8px;
+}
+
+.box:first-child /* This is called a 'pseudo-selector'*/ {
+    background-color: blue;
+    grid-column: 1/4;
+    grid-row: 1/3;
+    align-content: center;
+    justify-content: center;
+
+
+
+    /* fully spelled out version of above:
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;*/
+}
+
+.box:nth-child(2) {
+    background-color: blueviolet;
+    grid-column: 1/5;
+    grid-row: 3/4;
+} 
+
+/*exploration*/ 
